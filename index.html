@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Images/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Post App
+      </a>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="p-2">
+          <div class="card p-4">
+            <div class="mb-1">
+              <label for="exampleInputEmail1" class="form-label">Post Title</label>
+              <input id="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-1">
+              <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+              <textarea id="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <div class="images-list d-flex">
+                <img class="bg-image" onclick="selectImage ('Images/img1.jpeg')" src="Images/img1.jpeg" alt="">
+                <img class="bg-image" onclick="selectImage ('Images/img2.jpeg')" src="Images/img2.jpeg" alt="">
+                <img class="bg-image" onclick="selectImage ('Images/img3.jpeg')" src="Images/img3.jpeg" alt="">
+                <img class="bg-image" onclick="selectImage ('Images/img4.jpeg')" src="Images/img4.jpeg" alt="">
+                <img class="bg-image" onclick="selectImage ('Images/img5.jpeg')" src="Images/img5.jpeg" alt="">
+                <img class="bg-image" onclick="selectImage ('Images/img6.jpeg')" src="Images/img6.jpeg" alt="">
+              </div>
+            </div>
+            <button onClick="addPost()" type="submit" class="btn btn-primary">Post</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <div id="posts" class="p-2">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+    </div>
+  </div>
+
+
+
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

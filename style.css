@@ -1,0 +1,61 @@
+@font-face {
+    font-family: RobotoSlab-Regular;
+    src: url(Font/RobotoSlab-Regular.ttf);
+}
+
+* {
+    font-family: RobotoSlab-Regular;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.navbar {
+    background-color: #0866FF !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.btn-primary {
+    background-color: #0866FF;
+}
+
+.btn-primary:hover {
+    background-color: #0866FF;
+}
+
+.btn-primary:active {
+    background-color: #0866FF !important;
+}
+
+.swal2-actions{
+    width: 100% !important;
+}
+
+.swal2-confirm{
+    background-color: #0866FF !important;
+    width: 90% !important;
+
+}
+
+.images-list{
+    justify-content: space-around;
+}
+
+.images-list>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.images-list-selected {
+    border: 2px solid black;
+}
+
+.card-body {
+    background-size: cover;
+    /* background-image: url(Images/img3.jpeg); */
+}

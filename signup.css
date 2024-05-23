@@ -1,0 +1,33 @@
+@font-face {
+    font-family: RobotoSlab-Regular;
+    src: url(Font/RobotoSlab-Regular.ttf);
+}
+
+* {
+    font-family: RobotoSlab-Regular;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.navbar {
+    background-color: #0866FF !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.form-label {
+    font-size: medium;
+}
+
+.button{
+    display: contents;
+    background-color: #0866FF !important;
+}
+
+.card>a{
+    text-align: center;
+}
