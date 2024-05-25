@@ -8,15 +8,20 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
 }
-
+/* 
 .navbar {
     background-color: #0866FF !important;
 }
 
 .navbar-brand {
     color: white !important;
+} */
+
+.card {
+    border-radius: 5%;
+    background-image: linear-gradient(700deg, #020024 0%, #090899 35%, #00d4ff 100%);
 }
 
 .form-label {
@@ -30,4 +35,33 @@ body {
 
 .card>p{
     text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.header>p {
+    font-size: xx-large;
+    color: white;
+}
+
+.form-control,
+.btn-primary {
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+.form-label {
+    font-size: medium;
+    position: absolute;
+    height: 100%;
+    padding: 6px;
+    margin-left: 0%;
+}
+
+.user{
+    position: relative;
 }

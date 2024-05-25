@@ -5,31 +5,26 @@
 
 * {
     font-family: RobotoSlab-Regular;
-    /* background-image: linear-gradient(green blue) !important; */
-    /* background-image: linear-gradient rgb(101,206,166); */
 }
 
 body {
     background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
 }
 
-.navbar {
-    border: 2px solid black;
-}
+/* .navbar {
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    /* border:1px solid #fff; */
+
 
 .card {
     border-radius: 5%;
-    background-image: linear-gradient(10deg, #020024 0%, #090899 35%, #00d4ff 100%);
+    background-image: linear-gradient(700deg, #020024 0%, #090899 35%, #00d4ff 100%);
 
 }
 
-.navbar-brand {
+/* .navbar-brand {
     color: white !important;
-}
-
-.form-label {
-    font-size: medium;
-}
+} */
 
 .button {
     display: contents;
@@ -45,7 +40,7 @@ body {
     text-align: center;
 }
 
-.header>i {
+/* .header>i {
     font-size: 100px;
     color: white;
 }
@@ -53,4 +48,24 @@ body {
 .header>p {
     font-size: xx-large;
     color: white;
+} */
+
+.form-control,
+.btn-primary {
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+.form-label {
+    font-size: medium;
+    position: absolute;
+    height: 100%;
+    padding: 6px;
+    left: 0%;
+}
+
+.user{
+    position: relative;
 }
