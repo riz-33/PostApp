@@ -8,13 +8,44 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color:rgb(101,206,166);
 }
 
 .navbar {
-    background-color: #0866FF !important;
+    background-color: rgb(101,206,166) !important;
+    border: 2px solid black;
+}
+.card{
+background-color: rgb(101,206,166);
+border-radius: 5%;
 }
 
 .navbar-brand {
     color: white !important;
+}
+
+.form-label {
+    font-size: medium;
+}
+
+.button{
+    display: contents;
+    background-color: #0866FF !important;
+}
+
+.card>p{
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+}
+
+.header>i {
+    font-size: 100px;
+    /* color: white; */
+}
+
+.header>p {
+font-size: xx-large;
 }
