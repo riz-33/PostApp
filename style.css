@@ -8,15 +8,40 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: #f0f2f5;
+}
+
+.container-fluid1 {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-toggler {
+    outline: 0;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    margin-right: 1%;
+}
+
+.navbar-toggler-icon{
+    background-color:  #fff;
+    
 }
 
 .navbar {
-    background-color: #0866FF !important;
+    background-image: linear-gradient(250deg, #020024 0%, #090979 35%, #00d4ff 100%);
 }
 
 .navbar-brand {
     color: white !important;
+    margin-left: 10%;
+}
+
+.container-fluid{
+margin-top: 30px;
 }
 
 .btn-primary {
@@ -31,17 +56,17 @@ body {
     background-color: #0866FF !important;
 }
 
-.swal2-actions{
+.swal2-actions {
     width: 100% !important;
 }
 
-.swal2-confirm{
+.swal2-confirm {
     background-color: #0866FF !important;
     width: 90% !important;
 
 }
 
-.images-list{
+.images-list {
     justify-content: space-around;
 }
 
