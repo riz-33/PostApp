@@ -37,14 +37,14 @@ body {
     text-align: center;
 }
 
-.header {
+/* .header {
     text-align: center;
 }
 
 .header>p {
     font-size: xx-large;
     color: white;
-}
+} */
 
 .form-control,
 .btn-primary {
@@ -52,6 +52,7 @@ body {
     border: 1px solid #fff;
     color: #fff;
     background: transparent;
+    margin-bottom: 2%;
 }
 
 .form-label {
@@ -59,9 +60,14 @@ body {
     position: absolute;
     height: 100%;
     padding: 6px;
-    margin-left: 0%;
+    margin-left: 2%;
+    cursor: text;
 }
 
 .user{
     position: relative;
+}
+
+.login{
+    color: #fff;
 }

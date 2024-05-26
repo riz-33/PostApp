@@ -40,7 +40,7 @@ body {
     text-align: center;
 }
 
-/* .header>i {
+.header>i {
     font-size: 100px;
     color: white;
 }
@@ -48,7 +48,7 @@ body {
 .header>p {
     font-size: xx-large;
     color: white;
-} */
+}
 
 .form-control,
 .btn-primary {
@@ -58,14 +58,20 @@ body {
     background: transparent;
 }
 
-.form-label {
+label {
     font-size: medium;
     position: absolute;
     height: 100%;
     padding: 6px;
     left: 0%;
+    cursor: text;
 }
 
-.user{
+.user {
     position: relative;
+}
+
+.form-control{
+    padding-left: 25px;
+    /* margin: 10%; */
 }
