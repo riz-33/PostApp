@@ -84,7 +84,7 @@ function registrationForm() {
         localStorage.setItem("userData", JSON.stringify(arr))
 
         setTimeout(() => {
-            window.location.href = "/login.html"
+            window.location.href = "/post.html"
         }, 2000)
     }
 }
