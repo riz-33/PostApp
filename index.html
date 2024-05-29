@@ -2,128 +2,79 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Post App</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
-  <nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid1">
-      <a class="navbar-brand" href="#">
-        <img src="Images/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        Post App
-      </a>
-    </div>
-    <!-- </nav> -->
-
-    <!-- <nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-      aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Profile</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Full Name</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Email ID</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Phone Number
+    <!-- <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Images/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Post App
             </a>
-            <!-- <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
-    </div>
-    <!-- </div> -->
-  </nav>
+        </div>
+    </nav> -->
 
-  <div class="container-fluid">
-    <div class="row p-4">
-      <!-- <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-      </div> -->
-      <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-        <div class="p-2">
-          <div class="card p-4">
-            <div class="mb-1">
-              <label for="exampleInputEmail1" class="form-label">Post Title</label>
-              <input id="title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+<form onsubmit="registrationForm()" action="">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
             </div>
-            <div class="mb-1">
-              <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-              <textarea id="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="header col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="p-5">
+                    <div class="card p-3">
+                        <div class="user">
+                            <div>
+                                <label for="name" class="form-label"></label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div>
+                                <label for="lastname" class="form-label"></label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            </div>
+                            <div>
+                                <label for="email" class="form-label"></label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div>
+                                <label for="number" class="form-label"></label>
+                                <input type="number" class="form-control" id="number" placeholder="Contact Number">
+                            </div>
+                            <div>
+                                <label for="password" class="form-label"></label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label"></label>
+                                <input type="password" class="form-control" id="confirmPassword"
+                                    placeholder="Confirm Password">
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="mb-3 btn btn-primary">Sign
+                                in</button>
+                        </div>
+                        <p class="login">Already have an account? <a href="login.html">Login</a></p>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-              <div class="images-list d-flex">
-                <img class="bg-image" onclick="selectImage ('Images/img1.jpeg')" src="Images/img1.jpeg" alt="">
-                <img class="bg-image" onclick="selectImage ('Images/img2.jpeg')" src="Images/img2.jpeg" alt="">
-                <img class="bg-image" onclick="selectImage ('Images/img3.jpeg')" src="Images/img3.jpeg" alt="">
-                <img class="bg-image" onclick="selectImage ('Images/img4.jpeg')" src="Images/img4.jpeg" alt="">
-                <img class="bg-image" onclick="selectImage ('Images/img5.jpeg')" src="Images/img5.jpeg" alt="">
-                <img class="bg-image" onclick="selectImage ('Images/img6.jpeg')" src="Images/img6.jpeg" alt="">
-              </div>
-            </div>
-            <button onClick="addPost()" type="submit" class="btn btn-primary">Post</button>
-          </div>
         </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-        <div id="posts" class="p-2">
-
-        </div>
-        <div class="col-12 col-sm-12 col-md-0 col-lg-2">
-        </div>
-
-      </div>
     </div>
-
-    <!-- <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-      </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-        <div id="posts" class="p-2">
-
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
-    </div>
-  </div> -->
+</form>
 
 
-
-
-    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="signup.js"></script>
 </body>
 
 </html>
