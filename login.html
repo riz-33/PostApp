@@ -23,43 +23,45 @@
             </a>
         </div>
     </nav> -->
-    
-    <div class=" container-fluid">
-        <div class=" row">
-            <div class="col-12 col-sm-12 col-md-3 col-lg-4">
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-                <div class="p-5">
-                    <div class="header">
-                        <i class="fa-solid fa-users-line"></i>
-                        <p>SIGN IN</p>
-                    </div>
-                    <div class="card p-3">
-                        <div class="user">
-                            <div class="mb-3">
-                                <label for="email" class="form-label"> <i class="fa-solid fa-envelope"></i> 
-                                </label>
-                                <input type="email" class="email form-control" id="email" placeholder="Email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label"> <i class="fa-solid fa-lock"></i>
+
+    <form onsubmit="loginForm()" action="">
+        <div class=" container-fluid">
+            <div class=" row">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="p-5">
+                        <div class="header">
+                            <i class="fa-solid fa-users-line"></i>
+                            <p>SIGN IN</p>
+                        </div>
+                        <div class="card p-3">
+                            <div class="user">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label"> <i class="fa-solid fa-envelope"></i>
                                     </label>
-                                <input type="password" class="form-control" id="password" placeholder="Password">
+                                    <input type="email" class="email form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label"> <i class="fa-solid fa-lock"></i>
+                                    </label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
                             </div>
-                        </div>
-                        <div class="button">
-                            <button type="submit" class="mb-3 btn btn-primary">Sign in</button>
-                        </div>
-                        <p>Not a member? <a href="signup.html">Sign up now</a></p>
-                        <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            <div class="button">
+                                <button type="submit" class="mb-3 btn btn-primary">Sign in</button>
+                            </div>
+                            <p>Not a member? <a href="index.html">Sign up now</a></p>
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-4">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="login.js"></script>
 </body>
 
