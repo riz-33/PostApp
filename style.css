@@ -84,3 +84,7 @@ margin-top: 30px;
     background-size: cover;
     /* background-image: url(Images/img3.jpeg); */
 }
+
+.nav-link:hover{
+    color: #090979;
+}

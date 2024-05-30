@@ -64,13 +64,6 @@ function registrationForm() {
             timer: 1500
         });
 
-        var storage = localStorage.getItem("userData");
-        var arr = JSON.parse(storage);
-
-        if (!arr) {
-            arr = []
-        }
-
         var userData = {
             firstName: firstName.value,
             lastName: lastName.value,
@@ -80,8 +73,7 @@ function registrationForm() {
             confirmPassword: confirmPassword.value,
         }
 
-        arr.push(userData)
-        localStorage.setItem("userData", JSON.stringify(arr))
+        localStorage.setItem("userData", JSON.stringify(userData))
 
         setTimeout(() => {
             window.location.href = "/post.html"
